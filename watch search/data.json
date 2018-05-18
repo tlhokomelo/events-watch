@@ -1,0 +1,6 @@
+[
+  {"id": "1", "make": "Seiko", "price": "R500", "warranty": "1yr"},
+  {"id": "2", "make": "Omega", "price": "R1500", "warranty": "3yr"},
+  {"id": "3", "make": "Rolex", "price": "R10,000", "warranty": "3yr"}
+
+]

@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+Main Style
+--------------------------------------------------------------*/
+
+body {
+  background: #899ca3; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #40666f 0%, #486b7d 51%, #7e97a5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #40666f 0%,#486b7d 51%,#7e97a5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #40666f 0%,#486b7d 51%,#7e97a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40666f', endColorstr='#7e97a5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  display: block;
+  color: #ebeff0;
+  height: auto;
+}
+
+/* ------ Branding Article */
+
+#branding {
+  border-bottom: #ebeff0 1px solid;
+}
+
+/* ------ Current Time Article */
+
+#current-date p.date time {
+    color: #97acba;
+}
+
+/* ------ Events Article */
+
+#events button, #tasks button {
+  border: #97acba 1px solid;
+  background: none;
+  padding: .5em .2em;
+  font-size: .8em;
+}
+
+/* ------ Tasks Article */
+
+#tasks .menu-section {
+}
+
+#tasks .menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#tasks .menu li a {
+	display: block;
+	text-decoration: none;
+	padding: .6em 0em;
+  color: #ebeff0;
+}
+
+#tasks .menu li a:hover, .menu li a:focus {
+	color: #fff;
+  border-bottom: #91eebc 2px solid;
+  padding-bottom: .5em;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#tasks h4 {
+  list-style-type: circle;
+  font-weight: 300;
+}
+
+#tasks p.small-para {
+  font-size: .8em;
+}
+
+#current-date p.time time {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+}
+
+/* ------ Dashboard Aside */
+
+#dashboard h4 {
+  font-weight: 300;
+}
+#dashboard .dashboard-item p{
+  font-size: 2em;
+  margin: 0em;
+}
+
+#dashboard .dashboard-item p.even{
+  color: #91eebc;
+}
+
+#dashboard .dashboard-item p.odd{
+  color: #4491b5;
+}

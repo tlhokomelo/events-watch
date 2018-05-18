@@ -1,0 +1,230 @@
+/*--------------------------------------------------------------
+Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Small
+--------------------------------------------------------------*/
+
+
+@media screen and (min-width: 320px) {
+    main, aside {
+      margin: 2em .8em;
+      line-height: 140%;
+    }
+
+    .logo img{
+        max-width: 2.2em;
+    }
+    #branding, #events, #tasks {
+      margin-top: 3em;
+    }
+    #branding h3, #events h3, #tasks h3 {
+        font-size: 1em;
+        font-weight: normal;
+    }
+    #branding h3 {
+
+    }
+    #branding p.user-name {
+        font-size: 1.9em;
+        margin: .5em 0em;
+    }
+    #current-date p.date {
+      margin-top: 2em;
+      margin-bottom: .5em;
+    }
+    #current-date p.time {
+      margin-top: 1em
+    }
+    #current-date p.date time {
+        font-size: 1em;
+    }
+    #current-date p.time time {
+        font-size: 2.7em;
+        font-weight: 300;
+    }
+    #events h3 {
+      margin-bottom: 0em;
+    }
+    #events section.event-item {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    #events section.event-item  div.copy{
+      margin: 0em 1em;
+    }
+    #events section.event-item  div.copy p{
+      margin-bottom: .5em
+    }
+    #events section.event-item  div.copy p.large-para{
+      font-size: 1em;
+    }
+    #events section.event-item  div.copy p.small-para{
+      font-size: .8em;
+    }
+    #events section.event-item p.time time {
+      border-bottom: #91eebc 2px solid;
+      padding-bottom: 1em;
+    }
+    #events button, #tasks button{
+      width: 100%;
+    }
+    #tasks {
+      margin-top: 3em;
+    }
+    #tasks .single-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #tasks .single-nav li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    #dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+    #dashboard .dashboard-item {
+      flex: 1 0 auto;
+    }
+}
+
+/*--------------------------------------------------------------
+Medium
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  main, aside {
+    margin: 4em 1.5em;
+    line-height: 140%;
+  }
+  #branding {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  }
+  #branding .greatings {
+    grid-column: 1/1;
+    grid-row: 1/1
+  }
+  #branding .logo {
+      grid-column: 2/2;
+      grid-row: 1/2;
+      text-align: right;
+      margin-top: 2em;
+  }
+
+  #branding .logo img{
+      max-width: 3em;
+  }
+  #branding, #events, #tasks {
+      margin-top: 3em;
+  }
+  #branding h3, #events h3, #tasks h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+  }
+  #branding p.user-name {
+      font-size: 2em;
+      margin: .5em 0em;
+  }
+  #current-date {
+      border-right: #91eebc 4px solid;
+  }
+  #current-date p.date {
+      margin-top: 2em;
+      margin-bottom: .5em;
+  }
+  #current-date p.time {
+      margin-top: 1.5em
+  }
+  #current-date p.date time {
+      font-size: 1.2em;
+  }
+  #current-date p.time time {
+      font-size: 4.5em;
+      font-weight: 300;
+  }
+  #events .items {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  #events section.event-item {
+      display: inherit;
+      width: 90%;
+  }
+  #events section.event-item  div.copy{
+      margin: 0em;
+  }
+  #events section.event-item  div.copy p{
+      margin-bottom: .5em
+  }
+  #events section.event-item  div.copy p.large-para{
+      font-size: 1em;
+  }
+  #events section.event-item  div.copy p.small-para{
+      font-size: .8em;
+  }
+  #events section.event-item p.time time {
+      border-bottom: #91eebc 2px solid;
+      padding-bottom: 1em;
+  }
+  #events button, #tasks button{
+      width: 25%;
+  }
+  #tasks {
+      margin-top: 3em;
+      width: 70%;
+  }
+  #tasks .single-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 70%
+  }
+
+  #tasks .single-nav li {
+      flex: 1 0 auto;
+      text-align: center;
+  }
+  #dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 10em;
+      height: 50%;
+
+  }
+  #dashboard .dashboard-item {
+      flex: 1 0 auto;
+      text-align: right;
+  }
+  footer {
+      display: grid;
+      grid-template-columns: 80% 20%;
+  }
+
+}
+
+/*--------------------------------------------------------------
+Large
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 992px) {
+  #tasks {
+      width: 50%;
+  }
+  #dashboard {
+      height: 50%;
+  }
+  footer {
+      display: grid;
+      grid-template-columns: 90% 10%;
+  }
+}
